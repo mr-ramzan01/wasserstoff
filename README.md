@@ -1,21 +1,17 @@
-
 # Wasserstoff Frontend Assignment
 
 An assignment related to mostly frontend with data visualization and integration in map, chart and bubbles.
 
-<img width="959" alt="wasser" src="https://user-images.githubusercontent.com/108893444/222056706-f3a2ae90-f1eb-4686-bcfe-26e857dd8fb1.png">
-
-
-
-
+<img width="959" alt="wasserstoffbanner" src="https://github.com/mr-ramzan01/Cointab_Assign/assets/108893444/67936ba3-f1ac-449c-a408-e892cf9c57a2">
 
 ## Tech Stack
 
-Used React.js, Module css, d3, and d3-hexbin to build.
+Used React.js, axios, Module css, d3, and d3-hexbin to build.
 
 ## Steps to run build
 
 To initiate the project run
+
 ```
 npx create-react-app
 ```
@@ -37,23 +33,23 @@ To build the project
 ```
 npm run build
 ```
-## Video Explanation 
 
-https://drive.google.com/file/d/1DaYJSHvIMGI9CHBGEHK3qnNsZhY-kOJZ/view?usp=share_link
+## Video Explanation
+
+https://drive.google.com/file/d/1NGsJJx3h1wwFhxM-Azbag3IJ2XCekvp4/view?usp=sharing
 
 ## Deployment
 
 Deployed on vercel and here is the deployed link
 
-https://wasserstoff-assignment-azure.vercel.app
-
+https://wasserstoff-ivory.vercel.app
 
 ## Understanding the Approach
 
-I started with the smaller task first which has high reusability like the navbar and footer UI. After this, I completed the third page with bubble data visualization statically after that I convert it to dynamically integrated UI with all timeline as well as the zoom in and zoomout features.
+I first started with the smaller tasks with high reusability like the navbar and footer UI. After this, I went for the map which was built by hexagons, I researched it and came up with many libraries. I explored every library like h3-js and more but it didn't work very well. So I tried a library d3.js which is actually a data-driven visualization, I researched a lot and then finally I got to know how I did this.
 
-And, for the map I tried first with normal map svg and succed in that but the issue was it was not built with the hexagons which was the main task so then I come to know about the h3-js, I explored but didn't come to result then I got to find that the image data can be used in canvas in a way that whenever we hover any part of the image then I got data related to that part only which I think will be useful.
+So I have created the data for the hexagon map, for creating each hexagon I need to add the coordinates with this d3-hexbin generator which generates all the hexagons using the path of SVG so this is how I build the map also I have fetched the data for the population of the world and showing through the tooltip and distinguish with the color.
 
-So, I tried a library d3.js which is actually a data driven visualization, I research a lot but not able to fully incorporate what I thought,which was mapping the data image and converting pixelated form into hexagon.
+After that, I completed the bubble data visualization statically and converted it to a dynamically integrated UI with all timelines as well as the zoom-in and zoom-out features.
 
-During the assignment I learned a lot of libraries that I never explore before and the data visualization through d3.js which is very vast.
+During the assignment, I learned a lot of libraries that I had never explored before and data visualization through d3.js which is very vast.
